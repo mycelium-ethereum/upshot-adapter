@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  adapter:
+    build: .
+    image: gcr.io/tracer-external-adapters/upshot_adapter
+    platform: linux/amd64
+    expose:
+      - 8081
+    ports:
+      - "8081:8081"
+    environment:
+      - UPSHOT_API_KEY=${UPSHOT_API_KEY}
+      - PORT=${PORT}
+      - NAME=${NAME}
+      - DISCORD_WEBHOOK=${DISCORD_WEBHOOK}
+    restart: always

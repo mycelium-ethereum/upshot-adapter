@@ -1,0 +1,2 @@
+* * * * * root /usr/bin/flock -n /tmp/upshot_server.lockfile /app/docker-scripts/start_server.sh
+# empty line 
