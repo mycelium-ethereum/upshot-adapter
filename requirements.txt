@@ -1,4 +1,5 @@
 aiohttp==3.7.4.post0
+aioredis==2.0.1
 anyio==3.5.0
 asgiref==3.5.0
 async-timeout==3.0.1
@@ -10,15 +11,20 @@ click==8.0.4
 discord==1.7.3
 discord.py==1.7.3
 fastapi==0.74.1
+fastapi-cache2==0.1.8
 h11==0.13.0
 httptools==0.3.0
 idna==3.3
-importlib-metadata==4.11.1
+importlib-metadata==4.11.2
 multidict==6.0.2
+pendulum==2.1.2
 pydantic==1.9.0
+python-dateutil==2.8.2
 python-dotenv==0.19.2
+pytzdata==2020.1
 PyYAML==6.0
 requests==2.27.1
+six==1.16.0
 sniffio==1.2.0
 starlette==0.17.1
 typing_extensions==4.1.1

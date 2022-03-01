@@ -14,3 +14,11 @@ services:
       - NAME=${NAME}
       - DISCORD_WEBHOOK=${DISCORD_WEBHOOK}
     restart: always
+  redis:
+    image: redis:alpine
+    restart: always
+    volumes:
+      - redis_data:/data
+
+volumes:
+  redis_data:
